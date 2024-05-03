@@ -1,0 +1,234 @@
+{
+  "config_general": {
+    "lighteval_sha": "?",
+    "num_fewshot_seeds": 1,
+    "override_batch_size": 1,
+    "max_samples": null,
+    "job_id": "",
+    "start_time": 6665066.795067953,
+    "end_time": 6669761.017138322,
+    "total_evaluation_time_secondes": "4694.222070368938",
+    "model_name": "VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct",
+    "model_sha": "24fd931cc082feed8ec4d004565f997227d428fc",
+    "model_dtype": "torch.bfloat16",
+    "model_size": "131.73 GB",
+    "config": null
+  },
+  "results": {
+    "community|german_rag_eval:choose_context_by_question|0": {
+      "acc": 0.998,
+      "acc_stderr": 0.0014135055705578087
+    },
+    "community|german_rag_eval:choose_question_by_context|0": {
+      "acc": 1.0,
+      "acc_stderr": 0.0
+    },
+    "community|german_rag_eval:context_question_match|0": {
+      "acc": 0.973,
+      "acc_stderr": 0.005128089049275286
+    },
+    "community|german_rag_eval:question_answer_match|0": {
+      "acc": 0.949,
+      "acc_stderr": 0.006960420062571403
+    },
+    "community|german_rag_eval:_average|0": {
+      "acc": 0.98,
+      "acc_stderr": 0.0033755036706011243
+    },
+    "all": {
+      "acc": 0.98,
+      "acc_stderr": 0.0033755036706011243
+    }
+  },
+  "versions": {
+    "community|german_rag_eval:choose_context_by_question|0": 0,
+    "community|german_rag_eval:choose_question_by_context|0": 0,
+    "community|german_rag_eval:context_question_match|0": 0,
+    "community|german_rag_eval:question_answer_match|0": 0
+  },
+  "config_tasks": {
+    "community|german_rag_eval:choose_context_by_question": {
+      "name": "german_rag_eval:choose_context_by_question",
+      "prompt_function": "prompt_fn_choose_context_by_question",
+      "hf_repo": "deutsche-telekom/Ger-RAG-eval",
+      "hf_subset": "task2",
+      "metric": [
+        "loglikelihood_acc"
+      ],
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": "test",
+      "few_shots_select": "sequential",
+      "generation_size": null,
+      "stop_sequence": null,
+      "output_regex": null,
+      "frozen": false,
+      "suite": [
+        "community"
+      ],
+      "original_num_docs": 1000,
+      "effective_num_docs": 1000,
+      "trust_dataset": null,
+      "must_remove_duplicate_docs": null
+    },
+    "community|german_rag_eval:choose_question_by_context": {
+      "name": "german_rag_eval:choose_question_by_context",
+      "prompt_function": "prompt_fn_choose_question_by_context",
+      "hf_repo": "deutsche-telekom/Ger-RAG-eval",
+      "hf_subset": "task1",
+      "metric": [
+        "loglikelihood_acc"
+      ],
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": "test",
+      "few_shots_select": "sequential",
+      "generation_size": null,
+      "stop_sequence": null,
+      "output_regex": null,
+      "frozen": false,
+      "suite": [
+        "community"
+      ],
+      "original_num_docs": 1000,
+      "effective_num_docs": 1000,
+      "trust_dataset": null,
+      "must_remove_duplicate_docs": null
+    },
+    "community|german_rag_eval:context_question_match": {
+      "name": "german_rag_eval:context_question_match",
+      "prompt_function": "prompt_fn_context_question_match",
+      "hf_repo": "deutsche-telekom/Ger-RAG-eval",
+      "hf_subset": "task4",
+      "metric": [
+        "loglikelihood_acc"
+      ],
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": "test",
+      "few_shots_select": "sequential",
+      "generation_size": null,
+      "stop_sequence": null,
+      "output_regex": null,
+      "frozen": false,
+      "suite": [
+        "community"
+      ],
+      "original_num_docs": 1000,
+      "effective_num_docs": 1000,
+      "trust_dataset": null,
+      "must_remove_duplicate_docs": null
+    },
+    "community|german_rag_eval:question_answer_match": {
+      "name": "german_rag_eval:question_answer_match",
+      "prompt_function": "prompt_fn_question_answer_match",
+      "hf_repo": "deutsche-telekom/Ger-RAG-eval",
+      "hf_subset": "task3",
+      "metric": [
+        "loglikelihood_acc"
+      ],
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": "test",
+      "few_shots_select": "sequential",
+      "generation_size": null,
+      "stop_sequence": null,
+      "output_regex": null,
+      "frozen": false,
+      "suite": [
+        "community"
+      ],
+      "original_num_docs": 1000,
+      "effective_num_docs": 1000,
+      "trust_dataset": null,
+      "must_remove_duplicate_docs": null
+    }
+  },
+  "summary_tasks": {
+    "community|german_rag_eval:choose_context_by_question|0": {
+      "hashes": {
+        "hash_examples": "2f424136d4bd4d7d",
+        "hash_full_prompts": "39cd87b6c2ea6aaf",
+        "hash_input_tokens": "d8d7b8474fd933a3",
+        "hash_cont_tokens": "4592dac501e4875e"
+      },
+      "truncated": 0,
+      "non_truncated": 1000,
+      "padded": 3985,
+      "non_padded": 15,
+      "effective_few_shots": 0.0,
+      "num_truncated_few_shots": 0
+    },
+    "community|german_rag_eval:choose_question_by_context|0": {
+      "hashes": {
+        "hash_examples": "8bf6473a85177b1f",
+        "hash_full_prompts": "5e2ca6a21b29841a",
+        "hash_input_tokens": "7a2c7e17a97e4cd0",
+        "hash_cont_tokens": "4592dac501e4875e"
+      },
+      "truncated": 0,
+      "non_truncated": 1000,
+      "padded": 3981,
+      "non_padded": 19,
+      "effective_few_shots": 0.0,
+      "num_truncated_few_shots": 0
+    },
+    "community|german_rag_eval:context_question_match|0": {
+      "hashes": {
+        "hash_examples": "a468abdaad5c8e50",
+        "hash_full_prompts": "97f6dfae03dda98d",
+        "hash_input_tokens": "54fa2d78baf5be37",
+        "hash_cont_tokens": "c6d2137246271b6d"
+      },
+      "truncated": 0,
+      "non_truncated": 1000,
+      "padded": 1990,
+      "non_padded": 10,
+      "effective_few_shots": 0.0,
+      "num_truncated_few_shots": 0
+    },
+    "community|german_rag_eval:question_answer_match|0": {
+      "hashes": {
+        "hash_examples": "2bf9b553ab8ec761",
+        "hash_full_prompts": "4198a84609a10a84",
+        "hash_input_tokens": "81cd6045a6206b99",
+        "hash_cont_tokens": "c6d2137246271b6d"
+      },
+      "truncated": 0,
+      "non_truncated": 1000,
+      "padded": 2000,
+      "non_padded": 0,
+      "effective_few_shots": 0.0,
+      "num_truncated_few_shots": 0
+    }
+  },
+  "summary_general": {
+    "hashes": {
+      "hash_examples": "2864ba45cd940812",
+      "hash_full_prompts": "5c4a8e022a7b6b21",
+      "hash_input_tokens": "0367e7902e71b501",
+      "hash_cont_tokens": "8d9d0b0f5aeed845"
+    },
+    "truncated": 0,
+    "non_truncated": 4000,
+    "padded": 11956,
+    "non_padded": 44,
+    "num_truncated_few_shots": 0
+  }
+}
