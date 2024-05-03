@@ -1,3 +1,4 @@
 pandas
 ipykernel
 tabulate
+Jinja2
