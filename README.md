@@ -27,7 +27,7 @@ The German LLM evaluation is based on the
 - results can be found in this notebook: [german_rag_eval.ipynb](german_rag_eval.ipynb)
 - raw data can be found in this folder: [german_rag_eval](german_rag_eval)
 - The evaluation was carried out with [LightEval](https://github.com/huggingface/lighteval) and
-the `--use_chat_template` option.
+the `--use_chat_template --override_batch_size 1` options.
 
 ## Open LLM Leaderboard Evaluation
 
@@ -41,7 +41,7 @@ The open LLM leaderboard evaluation.
 - results can be found in this notebook: [open_llm_leaderboard_eval.ipynb](open_llm_leaderboard_eval.ipynb)
 - raw data can be found in this folder: [open_llm_leaderboard](open_llm_leaderboard)
 - The evaluation was carried out with [LightEval](https://github.com/huggingface/lighteval) and
-the `--use_chat_template` option.
+the `--use_chat_template --override_batch_size 1` options.
 
 ## Licensing
 
