@@ -14,6 +14,7 @@ the `--use_chat_template --override_batch_size 1` options.
 
 | model name                                               |   choose context by question acc |   choose question by context acc |   context question match acc |   question answer match acc |   all acc |   all acc stderr |
 |:---------------------------------------------------------|---------------------------------:|---------------------------------:|-----------------------------:|----------------------------:|----------:|-----------------:|
+| mistralai/Mixtral-8x22B-Instruct-v0.1                    |                            0.998 |                            1     |                        0.967 |                       0.986 |   0.98775 |       0.00269564 |
 | VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct          |                            0.998 |                            1     |                        0.973 |                       0.949 |   0.98    |       0.0033755  |
 | VAGOsolutions/SauerkrautLM-Mixtral-8x7B-Instruct         |                            0.953 |                            0.998 |                        0.975 |                       0.974 |   0.975   |       0.00452096 |
 | mistralai/Mixtral-8x7B-Instruct-v0.1                     |                            0.94  |                            0.998 |                        0.973 |                       0.973 |   0.971   |       0.00479586 |
